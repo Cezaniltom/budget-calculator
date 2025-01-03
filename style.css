@@ -19,12 +19,13 @@
 
 
 .navigator {
-    border: 1px solid red;
+    border: 1px solid black;
     width: 60%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5%;
 }
 
 img {
