@@ -23,11 +23,23 @@
     width: 60%;
     height: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 5%;
 }
 
+.division {
+    padding-right: 40px;
+}
+
 img {
-    width: 500px;
+    width: 400px;
+}
+
+.values-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
