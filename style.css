@@ -29,11 +29,22 @@
 }
 
 .division {
-    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 img {
     width: 400px;
+    padding-bottom: 1rem;
 }
 
 .values-form {
