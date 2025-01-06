@@ -22,7 +22,6 @@
 }
 
 .container {
-    border: 1px solid red;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -138,4 +137,60 @@ button#despesas-add {
     padding: 0.8rem;
     margin-top: 20%;
     font-size: 1rem;
+}
+
+button#initial-value:hover, button#despesas-add:hover {
+    background: #646c83;
+    color: #F5F5F7;
+    transition: 400ms;
+}
+
+@media (max-width: 768px) {
+    .navigator {    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .division {
+        border: none;
+        padding-right: 0;
+    }
+
+    .values-form  {
+        width: 100vw;
+        height: 100vh;
+        padding-bottom: 1rem;
+    }
+
+    .title {
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 1260px) {
+    .navigator {
+        width: 80%;
+    }
+
+    .values-form {
+        border-radius: 5%;
+    }
+}
+
+@media (max-width: 969px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .division {
+        padding-right: 0px;
+    }
+
+    .navigator {
+        height: 0%;
+        
+    }
 }
