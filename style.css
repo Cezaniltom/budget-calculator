@@ -190,7 +190,6 @@ button#initial-value:hover, button#despesas-add:hover {
     }
 
     .navigator {
-        height: 0%;
-        
+        box-shadow: none;
     }
 }
