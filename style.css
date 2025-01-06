@@ -88,7 +88,7 @@ input {
     padding-left: 5px;
     font-size: 12px;
     border-radius: 5px;
-    border: 0.5px solid;
+    border: 0.5px solid #B3B9CA;
     width: 170px;
     height: 30px;
     margin-top: 10px;
@@ -137,4 +137,5 @@ button#despesas-add {
     border-radius: 0.9rem;
     padding: 0.8rem;
     margin-top: 20%;
+    font-size: 1rem;
 }
