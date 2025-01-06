@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #F5F5F7;
-    color: #B3B9CA;
+    color: #646c83;
 }
 
 .gradient-text {
@@ -30,7 +30,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .navigator {
     width: 60%;
@@ -102,7 +101,7 @@ input {
 input::placeholder {
     color: #999;
     font-style: italic;
-    opacity:
+    opacity: 0.8;
 }
 
 h3 {
@@ -112,7 +111,7 @@ h3 {
 button {
     border: 1px solid #B3B9CA;
     background-color: #F5F5F7;
-    color: #B3B9CA;
+    color: #646c83;
     font-size: 1.4rem;
     cursor: pointer;
 }
@@ -135,7 +134,7 @@ button#initial-value {
 }
 
 button#despesas-add {
-    border-radius: 20px;
+    border-radius: 0.9rem;
     padding: 0.8rem;
     margin-top: 20%;
 }
