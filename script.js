@@ -1,6 +1,6 @@
-const valorTotal = document.getElementById('total-value')
-const addValor = document.getElementById('initial-value')
-const recebeValor = document.getElementById('valor')
+const valorTotal = document.querySelector('#total-value')
+const addValor = document.querySelector('#initial-value')
+const recebeValor = document.querySelector('#valor')
 
 addValor.addEventListener('click', () => {
 
