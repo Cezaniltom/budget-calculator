@@ -7,4 +7,6 @@ addValor.addEventListener('click', () => {
     const valorAtual = valorTotal.value;
 
     recebeValor.textContent = `R$ ${valorAtual}`;
+
+    valorTotal.value = '';
 })
