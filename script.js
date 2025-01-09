@@ -3,7 +3,7 @@ const addValor = document.querySelector('#initial-value')
 const recebeValor = document.querySelector('#valor')
 
 
-// Evanto que captura o valor inicial e mostra na tela
+// Evento que captura o valor inicial e mostra na tela
 addValor.addEventListener('click', () => {
 
     const valorAtual = parseFloat(valorTotal.value.replace(/[^\d.-]/g, ''));
@@ -11,9 +11,20 @@ addValor.addEventListener('click', () => {
     if (isNaN(valorAtual)) {
         alert('Por favor, adicione um valor válido.');        
     } else {
-        recebeValor.textContent = `R$ ${valorAtual}`;
+        recebeValor.textContent = `${valorAtual.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+        })}`;
     }
+
+    
+
     valorTotal.value = '';
 })
 
+
+// recebe o valor da despesa
+
+const valorDespesa = document.querySelector('#expense-value')
+const addDespesa = document.querySelector('#expense-add')
 

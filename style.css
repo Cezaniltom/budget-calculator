@@ -132,14 +132,14 @@ button#initial-value {
     justify-content: center;
 }
 
-button#despesas-add {
+button#expense-add {
     border-radius: 0.9rem;
     padding: 0.8rem;
     margin-top: 20%;
     font-size: 1rem;
 }
 
-button#initial-value:hover, button#despesas-add:hover {
+button#initial-value:hover, button#expense-add:hover {
     background: #646c83;
     color: #F5F5F7;
     transition: 400ms;
