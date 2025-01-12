@@ -28,3 +28,14 @@ addValor.addEventListener('click', () => {
 const valorDespesa = document.querySelector('#expense-value')
 const addDespesa = document.querySelector('#expense-add')
 
+
+addDespesa.addEventListener('click', () => {
+
+    const recebeValor =  parseFloat(valorDespesa.value.replace(/[^\d.-]/g, ''))
+
+    if (isNaN(recebeValor)) {
+        alert('Por favor, adicione um valor válido.');        
+    } else {
+        valorTotal.value -= recebeValor.valueOf()
+    }
+})
