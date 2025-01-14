@@ -10,7 +10,7 @@ addValor.addEventListener('click', () => {
         alert('Por favor, adicione um valor válido.');
     } else {
         localStorage.setItem('ValorInicial', valorAtual);
-        
+        attValor(valorAtual)
     }    
 
     valorTotal.value = '';
@@ -20,9 +20,10 @@ addValor.addEventListener('click', () => {
 // Persistindo os dados no localStorage
 const valueStorage = localStorage.getItem('ValorInicial');
 if(valueStorage) {
-    
+    attValor(parseFloat(valueStorage))
 }
 
+// Atualiza o valo que esta na tela
 function attValor(valor) {
     recebeValor.textContent = valor.toLocaleString('pt-BR', {
         style: 'currency',
@@ -30,8 +31,8 @@ function attValor(valor) {
     });
 }
 
-// recebe o valor da despesa
 
+// recebe o valor da despesa
 const valorDespesa = document.querySelector('#expense-value')
 const addDespesa = document.querySelector('#expense-add')
 
@@ -43,12 +44,13 @@ addDespesa.addEventListener('click', () => {
     if (isNaN(recebeValor)) {
         alert('Por favor, adicione um valor válido.');        
     } else {
-        localStorage.getItem('ValorInicial', recebeValor);
-        valorTotal.value -= recebeValor.valueOf()
+        const valorAtual = parseFloat(localStorage.getItem('valorInicial')) || 0;
+        const valorNovo = valorAtual - recebeValor;
+
+        localStorage.setItem('valorInicial', valorNovo);
+
+        attValor(valorNovo)
     }
+
+    valorDespesa.value = '';
 })
-
-
-
-
-const indice = 13;
