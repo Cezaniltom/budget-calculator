@@ -10,10 +10,7 @@ addValor.addEventListener('click', () => {
         alert('Por favor, adicione um valor válido.');
     } else {
         localStorage.setItem('ValorInicial', valorAtual);
-        recebeValor.textContent = valorAtual.toLocaleString('pt-BR', {
-            style: 'currency',
-            currency: 'BRL',
-        });
+        
     }    
 
     valorTotal.value = '';
@@ -23,12 +20,15 @@ addValor.addEventListener('click', () => {
 // Persistindo os dados no localStorage
 const valueStorage = localStorage.getItem('ValorInicial');
 if(valueStorage) {
-    recebeValor.textContent = parseFloat(valueStorage).toLocaleString('pt-BR', {
+    
+}
+
+function attValor(valor) {
+    recebeValor.textContent = valor.toLocaleString('pt-BR', {
         style: 'currency',
         currency: 'BRL',
     });
 }
-
 
 // recebe o valor da despesa
 
@@ -43,6 +43,12 @@ addDespesa.addEventListener('click', () => {
     if (isNaN(recebeValor)) {
         alert('Por favor, adicione um valor válido.');        
     } else {
+        localStorage.getItem('ValorInicial', recebeValor);
         valorTotal.value -= recebeValor.valueOf()
     }
 })
+
+
+
+
+const indice = 13;
